@@ -1,0 +1,21 @@
+**** Create SQL table ERROR: 
+
+Message: session not created: This version of ChromeDriver only supports Chrome version 116
+Current browser version is 119.0.6045.200 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+
+-------------------- Log date: 08-12-2023, 11:14:33
+
+-------------------- Log date: 08-12-2023, 12:31:24
+
+-------------------- Log date: 08-12-2023, 12:46:06
+
+-------------------- Log date: 08-12-2023, 13:41:09
+
+-------------------- Log date: 15-12-2023, 22:18:08
+
+-------------------- Log date: 17-12-2023, 17:00:37
+
+-------------------- Log date: 20-12-2023, 13:46:30
+
+-------------------- Log date: 21-12-2023, 09:33:46
+
