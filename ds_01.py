@@ -1,7 +1,4 @@
-#######################
-
 # web driver path, sql connection, messages and email functions!
-
 
 # function for web driver path:
 def wd_path():
