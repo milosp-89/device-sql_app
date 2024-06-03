@@ -1,12 +1,13 @@
+# main setup configuration:
 from distutils.core import setup
 import py2exe, sys, os
 
-sys.argv.append('py2exe')
+sys.argv.append("py2exe")
 
 setup (
     windows = [
         {
-            "script": 'ds.py',     
+            "script": "ds.py",     
             "icon_resources": [(0, "ds.ico")]
         }
     ],
