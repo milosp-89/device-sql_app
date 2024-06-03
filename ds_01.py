@@ -40,7 +40,6 @@ def sql_conn(**data):
     sql_conn.conn = pyodbc.connect(connection_string)
     sql_conn.cur = sql_conn.conn.cursor()
     
-
 # function for messages:
 def msg(**t):
     
@@ -68,9 +67,7 @@ def msg(**t):
     else:
         pass
 
-
 # function for emails:
-    
 def email(**e):
     
     import datetime, win32com.client as win32
