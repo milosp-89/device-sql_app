@@ -1,8 +1,13 @@
+# main application page:
+
 # modules and librarie:
 from tkinter import *
+
+# imported custom based functions from ds_01.py:
 from ds_01 import msg
 from ds_01 import email
 from ds_01 import wd_path
+
 import tkinter.ttk as ttk
 from ds_01 import sql_conn
 from tkinter import messagebox
@@ -139,7 +144,7 @@ def first_page():
         
         user_name = os.getlogin()
         
-        # main variables used for the main script
+        # main variables used for the main script:
         submit_all.user_name = user_name
         submit_all.form_url = list1
         submit_all.form_name = list2
@@ -168,7 +173,6 @@ def first_page():
             pass
 
 # function to check url:
-
     def check_url():
         submit_all()
         url_string = submit_all.form_url
@@ -238,6 +242,7 @@ def first_page():
         df_db['databases'] = df_db['databases'].str[0]
         sql_db_list = df_db['databases'].tolist()
         sql_db_list = [e for e in sql_db_list if e not in ('master', 'model', 'msdb', 'tempdb')]
+        
         if db_name_string in sql_db_list:
             entry2.configure(foreground="black")
             check_db.db = 0
@@ -263,13 +268,13 @@ def first_page():
             return(check_sql_tbl_name.tbl)
         
         else:
-            
             entry1.configure(foreground="red")
             check_sql_tbl_name_error = messagebox.showerror('ERROR',
                                                             'Invalid Table name!')
             check_sql_tbl_name_error
             check_sql_tbl_name.tbl = 1
             return(check_sql_tbl_name.tbl)
+            
             exit()
             
     # function to check if there are submissions within a form:
@@ -414,7 +419,6 @@ def first_page():
         return(api_flatten.final_data)
     
     # function for getting a form_name:
-    
     def form_name():
         
         submit_all()
@@ -575,7 +579,6 @@ def first_page():
         return(values_prep.dict_of_values)
     
     # function for preparation of the final dictionary:
-    
     def final_dict():
         
         dm_download()
@@ -604,7 +607,6 @@ def first_page():
         return(final_dict.dict_final)
 
     # main function:
-    
     def initiate_main_function():
         
         try:
@@ -921,7 +923,6 @@ def first_page():
         height = 33)
     
     # form name:
-    
     fname = StringVar()
     fname.set("E.G: form_name")
     
@@ -1036,7 +1037,6 @@ def second_page():
                map_all.table_name) # 3
     
     # function to check url:
-    
     def check_url():
         
         map_all()
@@ -1489,7 +1489,7 @@ def second_page():
     
     # url name:
     furl_02 = StringVar()
-    furl_02.set("E.G: https://devicemagic.ext.icrc.org/organizations/xxx/forms/yyyyy")
+    furl_02.set("E.G: xxx")
     
     entry3_img = PhotoImage(file = f"img_textBox3_02.png")
     entry3_bg = canvas.create_image(
@@ -1549,6 +1549,7 @@ def second_page():
 
     window_02.resizable(False, False)
     window_02.mainloop()
-        
+
+# calling mains and closing the loop app:
 window_main.resizable(False, False)
 window_main.mainloop()
