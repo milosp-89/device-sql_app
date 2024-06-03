@@ -10,4 +10,5 @@ Desktop application created in order to initiate SQL table creation and mapping 
 # First page or create page (create a SQL table):
 ![create](https://github.com/milosp-89/device-sql_app/assets/155644532/42333ae2-f843-49a7-a566-a469d5fab4c3)
 
-# Second page or map page (map/connect DM form and created SQL table)
+# Second page or map page (map/connect DM form and created SQL table):
+![map](https://github.com/milosp-89/device-sql_app/assets/155644532/6d56ac13-9834-4fac-83dd-01ad22d61db3)
